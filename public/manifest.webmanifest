@@ -1,0 +1,19 @@
+{
+  "name": "Tibo Social",
+  "short_name": "Tibo",
+  "description": "Tibo — conecte-se, crie e descubra.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0b0b12",
+  "theme_color": "#6C3EF4",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "/tibo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

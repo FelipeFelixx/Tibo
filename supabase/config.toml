@@ -1,0 +1,6 @@
+project_id = "iolsfrjtwmfcqdyfdhqm"
+[functions.tibo-create-checkout]
+verify_jwt = true
+
+[functions.tibo-stripe-webhook]
+verify_jwt = false

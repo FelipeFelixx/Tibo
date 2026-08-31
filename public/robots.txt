@@ -1,0 +1,12 @@
+User-agent: *
+Allow: /
+
+Disallow: /admin
+Disallow: /mensagens
+Disallow: /notificacoes
+Disallow: /configuracoes
+Disallow: /reset-password
+Disallow: /verify-email
+Disallow: /auth
+
+Sitemap: /sitemap.xml
