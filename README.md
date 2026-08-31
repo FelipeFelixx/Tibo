@@ -2,9 +2,9 @@
 
 O **Tibo** é uma rede social que estou desenvolvendo como projeto próprio.
 
-A ideia do projeto surgiu da vontade de criar uma plataforma social com identidade própria e, ao mesmo tempo, construir um projeto de longo prazo onde posso aplicar na prática os conhecimentos que venho adquirindo durante a graduação em **Engenharia de Software**.
+A ideia do projeto surgiu da vontade de criar uma plataforma social com identidade própria e, ao mesmo tempo, construir um projeto de longo prazo onde posso aplicar, na prática, conhecimentos adquiridos durante minha graduação em **Engenharia de Software**.
 
-O desenvolvimento do Tibo acompanha minha evolução como estudante e desenvolvedor. Conforme aprendo novos conceitos na faculdade e durante meus estudos, procuro entender como դրանք podem ser aplicados e incorporados ao desenvolvimento do projeto.
+O desenvolvimento do Tibo acompanha minha evolução como estudante e desenvolvedor. Conforme aprendo novos conceitos na faculdade e em estudos complementares, procuro entender como esses conhecimentos podem ser aplicados ao desenvolvimento do projeto.
 
 ---
 
@@ -26,17 +26,17 @@ Entre as áreas estudadas e desenvolvidas estão:
 * Compartilhamento de mídia
 * Descoberta de conteúdo
 
-O projeto está em constante evolução e novas funcionalidades são planejadas e desenvolvidas conforme a estrutura do sistema amadurece.
+O projeto está em constante evolução, e novas funcionalidades são planejadas e desenvolvidas conforme a estrutura do sistema amadurece.
 
 ---
 
 ## 🎓 Relação com minha graduação
 
-Iniciei minha graduação em **Engenharia de Software em 2026** e o Tibo se tornou um dos principais projetos onde consigo colocar conhecimentos em prática.
+Iniciei minha graduação em **Engenharia de Software em 2026**, e o Tibo se tornou um dos principais projetos onde consigo transformar conhecimentos teóricos em experiência prática.
 
 Conforme avanço nos estudos, procuro relacionar os conteúdos aprendidos com desafios reais encontrados durante o desenvolvimento da plataforma.
 
-O projeto me permite explorar, na prática, temas como:
+O projeto permite explorar, na prática, temas como:
 
 * Programação
 * Desenvolvimento Web
@@ -66,16 +66,20 @@ Durante o desenvolvimento do projeto, utilizo e estudo tecnologias do ecossistem
 * JavaScript
 * Vite
 * Tailwind CSS
-* React Router
+* TanStack Router
+* TanStack React Query
 * Framer Motion
+* Radix UI
 
 ### Back-end e dados
 
 * Supabase
 * PostgreSQL
 * SQL
-* Autenticação
+* Supabase Auth
 * Row Level Security (RLS)
+* APIs
+* Edge Functions
 
 ### Ferramentas
 
@@ -124,24 +128,15 @@ O objetivo é continuar evoluindo o projeto ao longo da minha formação e confo
 
 ---
 
-## 📚 Aprendizados
+## 📚 Documentação
 
-O desenvolvimento do Tibo me permite transformar conceitos teóricos em experiência prática.
+Para conhecer melhor o projeto, consulte:
 
-Ao trabalhar no projeto, tenho a oportunidade de:
-
-* Aplicar conhecimentos aprendidos durante a graduação
-* Estudar novas tecnologias
-* Resolver problemas técnicos
-* Testar diferentes abordagens
-* Melhorar a organização do código
-* Compreender decisões de arquitetura
-* Trabalhar com bancos de dados
-* Desenvolver interfaces
-* Aprender com erros e correções
-* Evoluir funcionalidades existentes
-
-Cada nova etapa do projeto representa também uma oportunidade de aprendizado.
+* 📘 [Visão geral do projeto](docs/projeto.md)
+* 🛠️ [Tecnologias utilizadas](docs/tecnologias.md)
+* 🏗️ [Arquitetura pública](docs/arquitetura-publica.md)
+* 📚 [Aprendizados durante o desenvolvimento](docs/aprendizados.md)
+* 📊 [Status do projeto](docs/status.md)
 
 ---
 
