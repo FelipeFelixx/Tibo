@@ -18,7 +18,21 @@ export async function fetchProfileByUsername(username: string): Promise<ProfileW
 
   // Cargo público do Tibo.
   // A tabela é somente leitura para o cliente.
-  const { data: roleRow, error: roleError } = await (db as any)
+  const { data: roleRow, error: roleError } = await (db as unknown as {
+    from: (table: string) => {
+      select: (columns: string) => {
+        eq: (
+          column: string,
+          value: string
+        ) => {
+          maybeSingle: () => Promise<{
+            data: { role: string } | null;
+            error: unknown;
+          }>;
+        };
+      };
+    };
+  })
     .from("tibo_user_roles")
     .select("role")
     .eq("user_id", profile.id)

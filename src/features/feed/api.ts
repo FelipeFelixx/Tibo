@@ -140,7 +140,24 @@ async function enrichPosts(posts: Array<{ id: string; author_id: string; created
     pollsRes,
   ] = await Promise.all([
     supabase.from("profiles").select(AUTHOR_SELECT).in("id", authorIds),
-    (supabase as any).from("tibo_user_roles").select("user_id,role").in("user_id", authorIds),
+    (
+        supabase as unknown as {
+          from: (table: string) => {
+            select: (columns: string) => {
+              in: (
+                column: string,
+                values: string[]
+              ) => Promise<{
+                data: Array<{ user_id: string; role: string }> | null;
+                error: unknown;
+              }>;
+            };
+          };
+        }
+      )
+        .from("tibo_user_roles")
+        .select("user_id,role")
+        .in("user_id", authorIds),
     supabase.from("post_images").select("*").in("post_id", postIds).order("position"),
     supabase.from("post_videos").select("*").in("post_id", postIds),
     supabase.from("post_reactions").select("post_id,kind").in("post_id", postIds),

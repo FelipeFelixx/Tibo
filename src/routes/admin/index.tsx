@@ -169,7 +169,14 @@ function BadgeManager({ badges }: { badges: AdminBadge[] }) {
   const owner = useQuery({
     queryKey: ["platform-admin-owner"],
     queryFn: async () => {
-      const { data, error } = await (supabase as any).rpc(
+      const { data, error } = await (supabase as unknown as {
+          rpc: (
+            functionName: string
+          ) => Promise<{
+            data: boolean | null;
+            error: unknown;
+          }>;
+        }).rpc(
         "is_platform_owner",
       );
 
